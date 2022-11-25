@@ -26,9 +26,12 @@ const DepenseSlice = createSlice({
         },
         addDepense : (state, action) => {
             state.depenses = [...state.depenses, action.payload];
+        },
+        deleteDepense : (state, action) => {
+            state.depenses.splice(action.payload,1);
         }
     }
 })
 
-export const {addbudget, addDepense} = DepenseSlice.actions
+export const {addbudget, addDepense, deleteDepense} = DepenseSlice.actions
 export default DepenseSlice.reducer;
