@@ -10,8 +10,8 @@ function App() {
     <div className="container">
       <Header />
       <Statistiques />
-      <div>
-        <div>
+      <div className='content'>
+        <div className='saisie'>
           <AddBudget />
           <AddDepense />
         </div>
